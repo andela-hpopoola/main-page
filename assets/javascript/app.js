@@ -1,0 +1,4 @@
+var _app=function(){this.id=0;this.videoElement=null;this.audioElement=null;this.musicVolume=100;this.musicFadeIn=4000;this.skippedIntro=false;this.backgroundToggler=false;this.shouldIgnoreVideo=false;this.effects=["bounce","flash","pulse","rubberBand","shake","swing","tada","wobble","jello"];this.brandDescription=["uid#0001 - 738981890043805707","professional skid","blackouts on flipd","all about the bag","fuck them hoes","♫ Too Many Nights - Metro Boomin","all this money coming to me",];this.iconChanger=function(urls,delay){if(!urls)
+    return;delay=delay||2000;var counter=0;setInterval(function(){if(counter<urls.length){var link=document.querySelector("link[rel*='icon']")||document.createElement('link');link.type='image/x-icon';link.rel='shortcut icon';link.href=urls[counter];document.getElementsByTagName('head')[0].appendChild(link);}
+    else
+    counter=0;++counter;},delay);}};var app=new _app();
