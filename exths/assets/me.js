@@ -1,0 +1,3 @@
+if(document.addEventListener){document.addEventListener("DOMContentLoaded",function(){loaded();});}else if(document.attachEvent){document.attachEvent("onreadystatechange",function(){loaded();});}
+function loaded(){setInterval(loop,350);}
+var x=0;var titleText=["$ o","$ op","$ opi","$ opiu","$ opium","$ opium.","$ opium.b","$ opium.bi","$ opium.bio","$ /","$ /s","$ /st","$ /sta","$ /stan","$ /stand","$ /stand","$","$ /stand ","$ /stand"];function loop(){document.getElementsByTagName("title")[0].innerHTML=titleText[x++%titleText.length];}
